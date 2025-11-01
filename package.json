@@ -1,0 +1,27 @@
+{
+  "name": "personal-cloud",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "migrate": "prisma migrate dev --name init",
+    "prisma:generate": "prisma generate"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^4.0.0",
+    "@aws-sdk/s3-request-presigner": "^4.0.0",
+    "@vercel/blob": "^1.0.0",
+    "bcryptjs": "^2.4.3",
+    "cookie": "^0.5.0",
+    "formidable": "^3.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "next": "13.5.0",
+    "prisma": "^4.15.0",
+    "@prisma/client": "^4.15.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "uuid": "^9.0.0"
+  }
+}
